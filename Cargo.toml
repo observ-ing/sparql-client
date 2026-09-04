@@ -30,3 +30,6 @@ chrono = { version = "0.4", default-features = false, features = ["std"], option
 [features]
 # Enable SparqlValue::as_datetime, which parses RFC 3339 / xsd:dateTime values.
 chrono = ["dep:chrono"]
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt", "macros"] }
